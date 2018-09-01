@@ -5,6 +5,10 @@
 
 package config
 
+import (
+	"path/filepath"
+)
+
 const (
 	defaultConfdPath            = filepath.Join(os.Getenv("ProgramData"), "Datadog", "conf.d")
 	defaultAdditionalChecksPath = filepath.Join(os.Getenv("ProgramData"), "Datadog", "checks.d")

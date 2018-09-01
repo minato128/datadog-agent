@@ -5,7 +5,10 @@
 
 package pidfile
 
-import "syscall"
+import (
+	"syscall"
+	"path/filepath"
+)
 
 const (
 	processQueryLimitedInformation = 0x1000

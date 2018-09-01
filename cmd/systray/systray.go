@@ -11,7 +11,8 @@ import (
 	"os"
 	"os/exec"
 	"syscall"
-
+	"path/filepath"
+	
 	"github.com/DataDog/datadog-agent/pkg/util/log"
 	seelog "github.com/cihub/seelog"
 
