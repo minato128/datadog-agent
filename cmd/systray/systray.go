@@ -10,9 +10,9 @@ import (
 	"flag"
 	"os"
 	"os/exec"
-	"syscall"
 	"path/filepath"
-	
+	"syscall"
+
 	"github.com/DataDog/datadog-agent/pkg/util/log"
 	seelog "github.com/cihub/seelog"
 

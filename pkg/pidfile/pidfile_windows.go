@@ -6,8 +6,8 @@
 package pidfile
 
 import (
-	"syscall"
 	"path/filepath"
+	"syscall"
 )
 
 const (
