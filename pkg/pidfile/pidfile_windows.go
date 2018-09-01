@@ -6,6 +6,7 @@
 package pidfile
 
 import (
+	"os"
 	"path/filepath"
 	"syscall"
 )
