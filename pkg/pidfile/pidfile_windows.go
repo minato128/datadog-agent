@@ -5,7 +5,11 @@
 
 package pidfile
 
-import "syscall"
+import (
+	"os"
+	"path/filepath"
+	"syscall"
+)
 
 const (
 	processQueryLimitedInformation = 0x1000
@@ -30,5 +34,5 @@ func isProcess(pid int) bool {
 
 // Path returns a suitable location for the pidfile under Windows
 func Path() string {
-	return "c:\\ProgramData\\DataDog\\datadog-agent.pid"
+	return filepath.Join(os.Getenv("ProgramData"), "DataDog", "datadog-agent.pid")
 }

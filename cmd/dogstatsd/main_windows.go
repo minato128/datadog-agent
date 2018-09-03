@@ -5,4 +5,9 @@
 
 package main
 
-const defaultLogFile = "c:\\programdata\\datadog\\logs\\dogstatsd.log"
+import (
+	"os"
+	"path/filepath"
+)
+
+var defaultLogFile = filepath.Join(os.Getenv("ProgramData"), "datadog", "logs", "dogstatsd.log")
